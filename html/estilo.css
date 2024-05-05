@@ -1,0 +1,394 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    font-size: 14px;
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+} 
+
+/* estilos BS*/
+
+.r--logo{
+    color: #008000;
+}
+
+.nav-link{
+    color: #080808;
+    font-weight: bold;
+}
+
+.encabezado{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    box-shadow: 0px 2px 4px rgb(0, 0, 0);
+
+}
+
+.encabezado h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    font-size: 2.5rem;
+}
+
+.oscuro {
+    color: #008000;
+}
+
+.boton{
+    background-color: #93cf93;
+    color: #ffffff;
+    font-weight: 700;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+}
+
+.boton :hover{
+    background-color: #1cdf1c;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.encabezado li{
+    list-style-type: none;
+    display: inline-block;
+    
+}
+
+.encabezado li a{
+    text-decoration: none;
+    margin: 10px;
+    color: #080808;
+    font-size: 1.5rem;    
+}
+
+.encabezado li a:hover {
+    color: #b5f3b5;
+}
+
+.portada {
+    background-image: url(imagen/portada.jpg);
+    height: calc(100vh - 100px);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.portada__inicio {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.portadaInicio h2{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.portadaInicio p {
+    color: #ffffff;
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+.portadaInicio .boton{
+    margin-top: 10px;
+}
+
+.productos{
+    text-align: center;
+    margin: 10vh;
+    border-bottom: 1px solid black;
+}
+
+.productos h3{
+    color: #008000;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.productos p{
+    font-size: 4rem;
+    color: #080808;
+    padding: 10px;
+}
+
+.contenedorLentes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+}
+
+.contenedorLentes__recetados{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgb(0, 0, 0);
+    margin: 10px;
+}
+
+.contenedorLentes__recetados img{
+   max-width: 100%;
+}
+
+.contenedorLentes__recetados p {
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: 30px;
+ 
+}
+
+
+.contenedorLentes__recetados__boton {
+    background-color: #b5f3b5;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.recetados button:hover {
+    background-color: #008000;
+}
+
+.footer {
+    background-color: #080808;
+    color: #ffffff;
+    padding: 20px 0;
+
+}
+
+.footerFinal{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    padding: 0 20px;
+    
+}
+
+.footer h4{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.infoContacto d-flex flex-colum text-center p,
+.redes a{
+    margin: 5px 0;
+    font-size: 0.5rem;
+    align-items: center;
+
+
+}
+
+
+.redes a{
+    color: #008000;
+    text-decoration: nono;
+    margin-right: 10px;
+    font-size: 0.5rem;
+}
+
+.redes img{
+    max-width: 30px;
+    border-radius: 10px;
+}
+
+
+.redes a:hover{
+    color: #008000;
+}
+
+
+
+/*TABLET: 760 a 1023*/
+
+@media (max-width: 1023px) {
+    .encabezado{
+        height: auto;
+        text-align:center;
+    }
+    .encabezado .boton{
+        display: none;
+    }
+    .portada__inicio p{
+        font-size: 2.5rem;
+        
+    }
+    .portada__inicio p{
+        font-size: 2.5rem;
+    }
+
+    .contenedorLentes {
+        grid-template-columns: 1fr 1fr;
+        flex-direction: column;
+    }
+
+    .productos{
+        margin: 5vh;
+        font-size: 2rem;
+    }
+    .productos h3,
+    .productos p{
+        font-size: inherit;
+    }
+    .portada__inicio{
+        grid-template-columns: 1fr 1fr;
+    }
+    .footerFinal{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px){
+    .portadaInicio{
+        grid-template-columns: 1fr;
+    }
+}
+
+.ubicacion p{
+    text-align: center;
+    font-weight: bold;
+    font-size: inherit
+}
+
+
+
+
+/*VISTA DE TODAS LAS PAGINAS*/    
+.logo{
+    width: 90px;
+}
+
+
+header{
+    text-align: center;
+    padding: 10px 20px;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 0 5px;
+    display: inline-block;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+main{
+   padding: 10px;
+   margin: 10px;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    color: #008000;
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+
+#subtitulo{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.first{
+    font-size: 40px;
+    color: #000000;
+    padding: 5px;
+    background-color: #b5f3b5;
+    text-align: center;
+}
+
+
+contenedor-productos{
+    margin: 30px;
+    border-radius: 20px;
+    align-items: flex-end;
+    display: block;
+}
+
+.productos{
+    width: 200px;
+    height: auto;
+    padding-top: 10px;
+    
+}
+
+.contenedor-productos p{
+    color: #000000;
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+}
+
+iframe{
+    display: block;
+    margin: auto;
+    padding-top: 10px;
+}
+
+form{
+    margin-top: 15px;
+    
+}
+
+label{
+    display: flex;
+    color: #008000;
+    margin-bottom: 10px;
+    font-weight: bold;
+
+}
+
+input,
+textarea{
+    display: block;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100px;
+    border: 1px solid hsl(91, 29%, 28%);
+    margin-bottom: 5px;
+}
+
+.form{
+    background-color: #008000;
+    padding: 10px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: bold;
+}
