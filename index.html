@@ -17,7 +17,29 @@
     <header class="encabezado">
         <div>
                 <img class="logo" src="imagen/logo.png" alt="Logo de la óptica">
-        </div>        
+        </div>
+        <nav class="navbar navbar-expand-lg">
+              <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./html/productos.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./html/sucursales.html">Sucursales</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./html/contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./html/nosotros.html"">Nosotros</a>
+                  </li>
+                </ul>
+              </div>
+          </nav>
+        <!--       
         <nav>
             <ul>
                 <li><a href="index.html"> Inicio </a></li>
@@ -27,12 +49,13 @@
                 <li><a href="html/nosotros.html"> Nosotros </a></li>
             </ul>
         </nav>
-        <button class="boton" > Chat </button>
+        --> 
+        <button type="button" class="btn boton">Chat</button>
         </div>
     </header>
 
     <section class="portada">
-        <div class="portadaInicio"></div>
+        <div class="portada__inicio"></div>
             <h1>ÓPTICA LUTZ FERRANDO</h1>
             <h2>Calidad Total en ÓPTICA</h2>
             <p>Ver bien es tener una <span class="oscuro">MEJOR VIDA</span></p>           
@@ -43,34 +66,52 @@
         <h3>Productos</h3>
     </section>
 
-    <main class="contenedorLentes">
-        <div class="recetados">
-            <img src="imagen/anteojos-recetados.jpg" alt="Anteojos Recetados">
-            <p> Recetados </p>
-            <button class="boton"> Ver más </button>
-        </div>
-        <div class="recetados">
-            <img src="imagen/gafas-de-sol.jpg" alt="Gafas de Sol">
-            <p> Gafas de Sol </p>
-            <button class="boton"> Ver más </button>
-        </div>
-        <div class="recetados">
-            <img src="imagen/lentes-de-contacto.jpg" alt="">
-            <p> Lentes de Contacto </p>
-            <button class="boton"> Ver más </button>
-        </div>
+    <main class="row">
+            <div class="card col-xl-4 col-md-6 col-sm-12">
+                <img src="imagen/anteojos-recetados.jpg" alt="Anteojos Recetados">
+                <p> Recetados </p>
+                <button class="contenedorLentes__recetados__boton"> Ver más </button>
+            </div>
+            <div class="card col-xl-4 col-md-6 col-sm-12">
+                <img src="imagen/gafas-de-sol.jpg" alt="Gafas de Sol">
+                <p> Gafas de Sol </p>
+                <button class="contenedorLentes__recetados__boton"> Ver más </button>
+            </div>
+            <div class="card col-xl-4 col-md-6 col-sm-12">
+                <img src="imagen/lentes-de-contacto.jpg" alt="">
+                <p> Lentes de Contacto </p>
+                <button class="contenedorLentes__recetados__boton"> Ver más </button>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
         <div class="footerFinal">
+
+            <div class="infoContacto d-flex flex-colum text-center">
+                <div class="row">
+                  <div class="col mapa">
+                    <p>Dirección: Bombal 74, San Rafel</p>
+                  </div>
+                  <div class="col tel">
+                   <p>Teléfono: +542604031513</p>
+                  </div>
+                  <div class="col">
+                    <p>Email: lutzferrandosr@gmail.com</p>
+                  </div>
+                </div>
+                              
+              </div>
+            <!--
             <div class="infoContacto d-flex flex-colum text-center">
                 <h4> Contacto </h4>
                 <p><i class="cont mapa"></i> Dirección: Bombal 74, San Rafel</p>
                 <p><i class="cont tel"></i> Teléfono: +542604031513 </p>
                 <p><i class="cont email"></i> Email: lutzferrandosr@gmail.com </p>
-            </div>          
+            </div>     
+        -->     
             <div class="redes">
-                <h4> Redes Sociales </h4>
+                <h4> Instagram </h4>
                 <a target="_blank" href="https://www.instagram.com/optica.lutzferrando/"><img src="imagen/instagram.jpg"> <i class="redes instagram"></i></a>
             </div>
         </div>
