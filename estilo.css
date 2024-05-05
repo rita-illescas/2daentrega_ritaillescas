@@ -12,6 +12,17 @@ body{
     margin: 0;
 } 
 
+/* estilos BS*/
+
+.r--logo{
+    color: #008000;
+}
+
+.nav-link{
+    color: #080808;
+    font-weight: bold;
+}
+
 .encabezado{
     display: flex;
     justify-content: space-around;
@@ -75,7 +86,7 @@ body{
 
 
 
-.portadaInicio {
+.portada__inicio {
     z-index: 1;
     display: flex;
     flex-direction: column;
@@ -131,9 +142,7 @@ body{
 
 }
 
-
-
-.recetados{
+.contenedorLentes__recetados{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -145,17 +154,19 @@ body{
     margin: 10px;
 }
 
-.recetados img{
+.contenedorLentes__recetados img{
    max-width: 100%;
 }
 
-.recetados p {
+.contenedorLentes__recetados p {
     margin: 10px 0;
     font-weight: bold;
     font-size: 30px;
+ 
 }
 
-.recetados button {
+
+.contenedorLentes__recetados__boton {
     background-color: #b5f3b5;
     color: #ffffff;
     border: none;
@@ -185,21 +196,25 @@ body{
 }
 
 .footer h4{
-    font-size: 1.5rem;
+    font-size: 15px;
     margin-bottom: 10px;
 }
 
-.infoContacto p,
+.infoContacto d-flex flex-colum text-center p,
 .redes a{
     margin: 5px 0;
-    font-size: 1.2rem;
+    font-size: 0.5rem;
+    align-items: center;
+
+
 }
+
 
 .redes a{
     color: #008000;
     text-decoration: nono;
     margin-right: 10px;
-    font-size: 1.5rem;
+    font-size: 0.5rem;
 }
 
 .redes img{
@@ -212,9 +227,7 @@ body{
     color: #008000;
 }
 
-.footer i{
-    margin-right: 10px;
-}
+
 
 /*TABLET: 760 a 1023*/
 
@@ -226,12 +239,17 @@ body{
     .encabezado .boton{
         display: none;
     }
-    .portadaInicio p{
+    .portada__inicio p{
         font-size: 2.5rem;
         
     }
-    .portadaInicio p{
+    .portada__inicio p{
         font-size: 2.5rem;
+    }
+
+    .contenedorLentes {
+        grid-template-columns: 1fr 1fr;
+        flex-direction: column;
     }
 
     .productos{
@@ -242,7 +260,7 @@ body{
     .productos p{
         font-size: inherit;
     }
-    .portadaInicio{
+    .portada__inicio{
         grid-template-columns: 1fr 1fr;
     }
     .footerFinal{
@@ -268,7 +286,7 @@ body{
 
 /*VISTA DE TODAS LAS PAGINAS*/    
 .logo{
-    width: 150px;
+    width: 90px;
 }
 
 
@@ -349,7 +367,7 @@ form{
 }
 
 label{
-    display: block;
+    display: flex;
     color: #008000;
     margin-bottom: 10px;
     font-weight: bold;
